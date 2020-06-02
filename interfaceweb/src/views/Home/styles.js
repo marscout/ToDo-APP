@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width:100%;
+    margin-bottom: 70px;
 `
 
 export const FilterArea = styled.div`
@@ -14,6 +15,8 @@ export const FilterArea = styled.div`
     button{
         background: none;
         border: none;
+
+        &:focus {outline:0;}
     }
 `
 
@@ -23,6 +26,11 @@ export const TaskCardArea = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
+
+    a{
+        text-decoration: none;
+        color: #000;
+    }
 `
 
 export const Title = styled.div`

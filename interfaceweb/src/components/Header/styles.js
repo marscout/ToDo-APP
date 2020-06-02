@@ -28,6 +28,7 @@ export const RightSide = styled.div`
     align-items: center;
     justify-content: flex-end;
     
+    
     a{
         color: white;
         font-weight: bold;
@@ -54,12 +55,21 @@ export const RightSide = styled.div`
         &:hover{
             opacity: 0.5
         }
+        
     }
 
     button{
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Roboto';
+        color: white;
         background: none;
         border: none;
         &:focus {outline:0;}
+        &:hover{
+            color: #FFD427;
+        }
+        
     }
 
     .dividir::after{
@@ -67,4 +77,9 @@ export const RightSide = styled.div`
         margin: 0 10px;
         color: white;
     }
+
+    img{
+            width: 22px;
+            height: auto;
+        }
 `

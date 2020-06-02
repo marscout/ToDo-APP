@@ -57,7 +57,7 @@ class TaskController {
     async done(req, res){
         await TaskModel.findByIdAndUpdate(
             {'_id': req.params.id },
-            { 'done': req.params.done },
+            { 'done': req.body.done },
             {new: true}
         ).then(response => {
             return res.status(200).json(response)

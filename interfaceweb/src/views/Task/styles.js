@@ -153,19 +153,25 @@ export const Options = styled.div`
 export const Send = styled.div`
     width:100%;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     button{
-        width: 100%;
+        width: 50%;
         padding: 20px;
         color: white;
         background: #FFD427;
+        border: none;
         border-radius: 30px;
         font-size: 24px;
         font-weight: bold;
+        transition: all 0.3s;
         cursor: pointer;
         &:focus {outline:0;}
 
         &:hover{
             opacity: 0.7;
+            width: 100%;
         }
     }
 
